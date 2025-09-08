@@ -1,8 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import hellsing from './assets/pumaxl.png'
-import HP from './assets/new balance.webp'
-import HxH from './assets/dn.avif'
+import hellsing from './assets/pumal.png'
+import HP from './assets/new balance.png'
+import React from 'react'
+import HxH from './assets/dn.png'
+import Slider1 from './assets/Slider1.png'
+import Slider2 from './assets/Slider2.png'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,7 +15,26 @@ function App() {
   return (
     <>
       <main>
-        <header></header>
+        <header>
+        <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>
+        <img src={Slider1} alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+      <img src={Slider2} alt='' />
+      </SwiperSlide>
+      <SwiperSlide> <img src={Slider1} alt='' />
+      </SwiperSlide>
+      <SwiperSlide>
+      <img src={Slider2} alt='' />
+      </SwiperSlide>
+    </Swiper>
+        </header>
         <section className="produtos">
 
           {/* Produto 1 */}

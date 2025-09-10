@@ -7,6 +7,7 @@ import HxH from './assets/dn.png'
 import Slider1 from './assets/Slider1.png'
 import Slider2 from './assets/Slider2.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay} from 'swiper/modules'
 import 'swiper/css'
 
 function App() {
@@ -17,21 +18,28 @@ function App() {
       <main>
         <header>
         <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+        modules={[Autoplay]}
+      spaceBetween={0}
+      slidesPerView={1}
+    autoplay={{
+      delay:3000,
+      disableOnInteraction:false,
+  }}
+loop={true}
+className='mySwiper'
     >
       <SwiperSlide>
-        <img src={Slider1} alt='' />
+        <img src={Slider1} alt='slide1' />
       </SwiperSlide>
       <SwiperSlide>
-      <img src={Slider2} alt='' />
+      <img src={Slider2} alt='Slide 2' />
       </SwiperSlide>
-      <SwiperSlide> <img src={Slider1} alt='' />
+      <SwiperSlide> <img src={Slider1} alt='slide3' />
       </SwiperSlide>
       <SwiperSlide>
-      <img src={Slider2} alt='' />
+        <SwiperSlide> <img src={Slider1} alt='slide3' />
+         </SwiperSlide>
+      <SwiperSlide></SwiperSlide>
       </SwiperSlide>
     </Swiper>
         </header>

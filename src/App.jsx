@@ -4,8 +4,10 @@ import hellsing from './assets/pumal.png'
 import HP from './assets/new balance.png'
 import React from 'react'
 import HxH from './assets/dn.png'
-import Slider1 from './assets/Slider1.png'
-import Slider2 from './assets/Slider2.png'
+import Slider1 from './assets/1.jpg'
+import Slider2 from './assets/2.jpg'
+import Slider3 from './assets/3.jpg'
+import Slider4 from './assets/4.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay} from 'swiper/modules'
 import 'swiper/css'
@@ -34,10 +36,10 @@ className='mySwiper'
       <SwiperSlide>
       <img src={Slider2} alt='Slide 2' />
       </SwiperSlide>
-      <SwiperSlide> <img src={Slider1} alt='slide3' />
+      <SwiperSlide> <img src={Slider3} alt='slide3' />
       </SwiperSlide>
       <SwiperSlide>
-        <SwiperSlide> <img src={Slider1} alt='slide3' />
+        <SwiperSlide> <img src={Slider4} alt='slide3' />
          </SwiperSlide>
       <SwiperSlide></SwiperSlide>
       </SwiperSlide>

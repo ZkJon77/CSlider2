@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import hellsing from './assets/pumal.png'
-import HP from './assets/new balance.png'
+import hellsing from './assets/arsenal.png'
+import HP from './assets/milan.png'
 import React from 'react'
-import HxH from './assets/dn.png'
+import HxH from './assets/celtic.png'
 import Slider1 from './assets/1.jpg'
 import Slider2 from './assets/2.jpg'
 import Slider3 from './assets/3.jpg'
@@ -31,7 +31,7 @@ loop={true}
 className='mySwiper'
     >
       <SwiperSlide>
-        <img src={Slider1} alt='slide1' />
+        <img src={Slider1} alt='slide 1' />
       </SwiperSlide>
       <SwiperSlide>
       <img src={Slider2} alt='Slide 2' />
@@ -51,8 +51,8 @@ className='mySwiper'
           <a href="#" className="link-card">
             <div className="card">
               <img src={hellsing} alt="" className="img-card" />
-              <h2 className="titulo-card">Puma suede xl</h2>
-              <p className="desc">Nova coleção da puma</p>
+              <h2 className="titulo-card">Camisa Retrô Arsenal Home</h2>
+              <p className="desc">Camisa do Arsenal Retrô 05/06 – Torcedor Nike Masculina Vinho</p>
               <p className="preco">R$ 499,99</p>
               <div className="avaliacao"> ★ ★ ★ ★ ☆</div>
              
@@ -63,8 +63,8 @@ className='mySwiper'
           <a header="#" className="img-card">
           <div className="card">
             <img src={HP} alt="" className="img-card" />
-            <h2 className="titulo-card">New Balance 550</h2>
-            <p className="desc">Da Serie de tenis 500</p>
+            <h2 className="titulo-card">Camisa Retro Milan Home 2006/2007</h2>
+            <p className="desc">Relembre com essa camisa como se fosser jogar,camisa do milan tailandesa 1.1</p>
             <p className="preco">R$ 250,00</p>
             <div className="avaliacao"> ★ ★ ★ ★ ★</div>
             
@@ -74,9 +74,9 @@ className='mySwiper'
           <a header="#" className="link-card">
             <div className="card">
               <img src={HxH} alt="" className="img-card" />
-              <h2 className="titulo-card">Airmax Dn</h2>
-              <p className="desc">Nova Coleção Airmax (estão como novos)</p>
-              <p className="preco">R$  ̶(2̶.̶2̶5̶0̶,̶0̶0̶) 2.025,00</p>
+              <h2 className="titulo-card">Camisa De Futebol Celtic Retro Home  Retrô</h2>
+              <p className="desc">1987/1988 Camisa De Futebol Celtic Retro Home Camisetas De Time Camisas Esporte Do Football Shirt Tailandesa Qualidade 1:1</p>
+              <p className="preco">R$  ̶(2̶.̶2̶5̶0̶,̶0̶0̶) 200</p>
               <div className="avaliacao"> ★ ★ ★ ★ ★</div>
               <div className="off">- 10%</div>
             </div>
